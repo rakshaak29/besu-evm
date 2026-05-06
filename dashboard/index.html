@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Besu EVM Benchmarks</title>
+  <meta name="description" content="Continuous EVM performance benchmarks for Hyperledger Besu — track throughput, detect regressions, and visualize trends across releases." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-icon">⚡</span>
+      <div>
+        <h1 class="brand-title">Besu EVM Benchmarks</h1>
+        <p class="brand-sub">Continuous performance tracking · Hyperledger Besu</p>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="#overview" class="nav-link active" data-tab="overview">Overview</a>
+      <a href="#benchmarks" class="nav-link" data-tab="benchmarks">Benchmarks</a>
+      <a href="#trends" class="nav-link" data-tab="trends">Trends</a>
+      <a href="#runs" class="nav-link" data-tab="runs">Runs</a>
+      <a href="https://github.com/hyperledger/besu" class="nav-link nav-external" target="_blank" rel="noopener">
+        GitHub ↗
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── HERO STATS ───────────────────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="stat-grid">
+      <div class="stat-card" id="stat-runs">
+        <div class="stat-value" id="val-runs">—</div>
+        <div class="stat-label">Total Runs</div>
+      </div>
+      <div class="stat-card" id="stat-benchmarks">
+        <div class="stat-value" id="val-benchmarks">—</div>
+        <div class="stat-label">Benchmarks Tracked</div>
+      </div>
+      <div class="stat-card" id="stat-latest-ref">
+        <div class="stat-value mono" id="val-latest-ref">—</div>
+        <div class="stat-label">Latest Branch / Tag</div>
+      </div>
+      <div class="stat-card" id="stat-regressions">
+        <div class="stat-value" id="val-regressions">—</div>
+        <div class="stat-label">Active Regressions</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MAIN CONTENT ─────────────────────────────────────── -->
+<main class="container main-content">
+
+  <!-- ── TAB: OVERVIEW ─── -->
+  <section id="tab-overview" class="tab-section active">
+    <h2 class="section-title">Overview</h2>
+
+    <!-- Regression alerts -->
+    <div id="regression-alerts" class="regression-alerts hidden"></div>
+
+    <!-- Category summary cards -->
+    <div class="category-grid" id="category-grid"></div>
+
+    <!-- Latest top benchmarks chart -->
+    <div class="card chart-card">
+      <div class="card-header">
+        <span class="card-title">Latest Snapshot — All Benchmarks (MGps)</span>
+        <span class="badge badge-live">Live</span>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="overviewChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TAB: BENCHMARKS ─── -->
+  <section id="tab-benchmarks" class="tab-section hidden">
+    <h2 class="section-title">All Benchmarks</h2>
+    <div class="toolbar">
+      <input type="text" id="bench-search" class="search-input" placeholder="🔍 Search benchmark…" />
+      <div class="filter-chips" id="category-filters"></div>
+      <div class="sort-wrap">
+        <label>Sort by</label>
+        <select id="bench-sort" class="select-input">
+          <option value="score-desc">Score ↓ (fastest first)</option>
+          <option value="score-asc">Score ↑ (slowest first)</option>
+          <option value="name-asc">Name A→Z</option>
+          <option value="name-desc">Name Z→A</option>
+          <option value="category">Category</option>
+        </select>
+      </div>
+    </div>
+    <div class="bench-table-wrap">
+      <table class="bench-table" id="bench-table">
+        <thead>
+          <tr>
+            <th class="sortable" data-col="name">Benchmark</th>
+            <th class="sortable" data-col="category">Category</th>
+            <th class="sortable" data-col="score">Score</th>
+            <th>Unit</th>
+            <th class="sortable" data-col="change">7d Change</th>
+            <th>Sparkline</th>
+          </tr>
+        </thead>
+        <tbody id="bench-tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── TAB: TRENDS ─── -->
+  <section id="tab-trends" class="tab-section hidden">
+    <h2 class="section-title">Performance Trends</h2>
+    <div class="toolbar">
+      <label>Benchmark</label>
+      <select id="trend-select" class="select-input wide"></select>
+      <label>Category</label>
+      <select id="trend-category" class="select-input">
+        <option value="all">All</option>
+      </select>
+    </div>
+    <div class="card chart-card">
+      <div class="card-header">
+        <span class="card-title" id="trend-chart-title">Select a benchmark</span>
+      </div>
+      <div class="chart-wrap tall">
+        <canvas id="trendChart"></canvas>
+      </div>
+    </div>
+    <div class="trend-stats" id="trend-stats"></div>
+  </section>
+
+  <!-- ── TAB: RUNS ─── -->
+  <section id="tab-runs" class="tab-section hidden">
+    <h2 class="section-title">Run History</h2>
+    <div id="runs-list" class="runs-list"></div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>Besu EVM Benchmarks · <a href="https://github.com/hyperledger/besu" target="_blank">Hyperledger Besu</a></span>
+    <span class="footer-updated">Data updated: <span id="footer-updated">—</span></span>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
