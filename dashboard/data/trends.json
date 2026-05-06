@@ -1,0 +1,1692 @@
+{
+  "ADD": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 4156.26,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 4191.1,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 4200.64,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 4249.17,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 4304.77,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 4242.12,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 4404.54,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 4393.5,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 4265.46,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 4302.3,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 4119.53,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 4346.56,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 4555.78,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 4575.74,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 4445.11,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 4612.2,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    }
+  ],
+  "MUL": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 2821.72,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 2873.47,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 2795.2,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 2801.71,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 2801.81,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 2855.59,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 2886.98,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 2919.98,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 2948.03,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 2879.29,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 2675.99,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 2881.18,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 2973.35,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 2971.56,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 3028.4,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 3067.38,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    }
+  ],
+  "DIV": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 1993.89,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 1978.31,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 1967.02,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 1958.13,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 1989.88,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 1951.19,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 2032.2,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 1981.72,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 1996.11,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 2062.56,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 1887.17,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 2073.88,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 2022.04,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 2071.33,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 2102.81,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 2097.96,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    }
+  ],
+  "EXP": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 377.54,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 382.47,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 380.45,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 384.6,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 391.57,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 389.98,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 398.71,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 391.74,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 398.8,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 390.81,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 367.14,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 396.36,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 411.46,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 411.02,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 411.01,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 418.45,
+      "score_unit": "MGps",
+      "category": "arithmetic"
+    }
+  ],
+  "AND": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 4752.26,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 4886.54,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 4778.96,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 4766.62,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 4833.98,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 5014.44,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 4966.08,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 5046.15,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 5002.59,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 5064.64,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 4615.72,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 5076.24,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 5164.63,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 5050.57,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 5172.65,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 5146.2,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    }
+  ],
+  "XOR": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 4715.32,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 4624.44,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 4670.45,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 4672.37,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 4859.63,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 4752.33,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 4927.16,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 4806.96,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 4868.64,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 4833.7,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 4552.6,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 4910.82,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 5043.75,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 4948.95,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 4984.21,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 4997.05,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    }
+  ],
+  "SHL": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 4033.26,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 4190.68,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 4134.64,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 4193.08,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 4178.6,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 4130.4,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 4321.96,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 4347.62,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 4237.13,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 4205.53,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 4004.46,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 4290.47,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 4251.06,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 4354.99,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 4411.83,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 4321.4,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    }
+  ],
+  "SHR": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 4143.89,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 4082.61,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 4156.16,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 4191.75,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 4112.47,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 4152.75,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 4138.41,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 4218.77,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 4290.52,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 4174.65,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 3980.5,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 4350.19,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 4361.97,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 4265.53,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 4368.22,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 4393.47,
+      "score_unit": "MGps",
+      "category": "bitwise"
+    }
+  ],
+  "PUSH_POP": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 5603.2,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 5613.1,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 5475.84,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 5608.15,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 5645.33,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 5538.66,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 5747.52,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 5584.21,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 5587.0,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 5859.92,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 5410.84,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 5935.7,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 5789.12,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 5960.26,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 5926.46,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 5887.89,
+      "score_unit": "MGps",
+      "category": "stack"
+    }
+  ],
+  "DUP": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 5123.39,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 5210.72,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 5345.15,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 5264.2,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 5178.64,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 5408.97,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 5477.79,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 5482.34,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 5498.58,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 5489.32,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 4968.66,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 5383.98,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 5645.93,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 5639.57,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 5464.19,
+      "score_unit": "MGps",
+      "category": "stack"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 5548.05,
+      "score_unit": "MGps",
+      "category": "stack"
+    }
+  ],
+  "MSTORE_MLOAD": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 3136.75,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 3166.18,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 3096.34,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 3084.21,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 3237.36,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 3208.26,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 3194.01,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 3221.94,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 3270.34,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 3164.99,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 3010.45,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 3246.43,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 3276.69,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 3379.4,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 3288.64,
+      "score_unit": "MGps",
+      "category": "memory"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 3352.94,
+      "score_unit": "MGps",
+      "category": "memory"
+    }
+  ],
+  "SHA3_32B": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 991.12,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 1003.37,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 992.34,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 970.88,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 1002.29,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 996.45,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 991.38,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 1024.61,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 1006.65,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 1028.05,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 927.06,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 1019.27,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 1060.43,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 1047.54,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 1063.34,
+      "score_unit": "MGps",
+      "category": "crypto"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 1064.18,
+      "score_unit": "MGps",
+      "category": "crypto"
+    }
+  ],
+  "CALLDATALOAD": [
+    {
+      "timestamp": "2025-01-06T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "682c10b",
+      "score": 3848.93,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-01-13T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "20a08e7",
+      "score": 3822.65,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "5c7aa70",
+      "score": 3906.56,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-01-27T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "59673d2",
+      "score": 3921.18,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-02-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "7b0649e",
+      "score": 3907.7,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-02-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "ca83c61",
+      "score": 3965.11,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-02-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "86f42a9",
+      "score": 3928.9,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-02-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "300acdb",
+      "score": 3943.99,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-03-03T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "dc9c429",
+      "score": 4091.52,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-03-10T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "e83b6bb",
+      "score": 4123.75,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-03-17T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "4bcbcde",
+      "score": 3702.35,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-03-24T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "d56814c",
+      "score": 4196.75,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-03-31T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "22eaae9",
+      "score": 4060.02,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-04-07T00:00:00Z",
+      "besu_ref": "main",
+      "besu_sha": "a06a610",
+      "score": 4149.17,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-04-14T00:00:00Z",
+      "besu_ref": "v25.1.0",
+      "besu_sha": "e8ce45a",
+      "score": 4177.04,
+      "score_unit": "MGps",
+      "category": "calls"
+    },
+    {
+      "timestamp": "2025-04-21T00:00:00Z",
+      "besu_ref": "v25.2.0",
+      "besu_sha": "bb2cdbb",
+      "score": 4176.99,
+      "score_unit": "MGps",
+      "category": "calls"
+    }
+  ]
+}
