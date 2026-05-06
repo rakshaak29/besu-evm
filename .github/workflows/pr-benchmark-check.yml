@@ -1,0 +1,88 @@
+name: PR Benchmark Check
+
+on:
+  pull_request:
+    paths:
+      - 'ethereum/core/src/main/java/org/hyperledger/besu/evm/**'
+      - 'ethereum/core/src/jmh/**'
+      - 'ethereum/evmtool/**'
+    types: [labeled]
+
+# Only run when maintainer adds the 'run-benchmarks' label
+jobs:
+  benchmark-on-pr:
+    if: contains(github.event.pull_request.labels.*.name, 'run-benchmarks')
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: besu-pr
+
+      - name: Checkout base branch
+        uses: actions/checkout@v4
+        with:
+          repository: hyperledger/besu
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: besu-base
+
+      - name: Checkout benchmarks repo
+        uses: actions/checkout@v4
+        with:
+          path: benchmarks
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: gradle
+
+      - name: Build PR branch evmtool
+        working-directory: besu-pr
+        run: ./gradlew :ethereum:evmtool:installDist -x test --no-daemon
+
+      - name: Build base branch evmtool
+        working-directory: besu-base
+        run: ./gradlew :ethereum:evmtool:installDist -x test --no-daemon
+
+      - name: Run benchmarks on PR branch
+        run: |
+          python3 benchmarks/scripts/run_evmtool_benchmarks.py \
+            --evmtool besu-pr/ethereum/evmtool/build/install/evmtool/bin/evm \
+            --genesis besu-pr/ethereum/evmtool/src/test/benchmarks/evmtool-genesis.json \
+            --output /tmp/pr_results.json \
+            --besu-sha ${{ github.event.pull_request.head.sha }} \
+            --besu-ref "pr-${{ github.event.pull_request.number }}" \
+            --timestamp "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+      - name: Run benchmarks on base branch
+        run: |
+          python3 benchmarks/scripts/run_evmtool_benchmarks.py \
+            --evmtool besu-base/ethereum/evmtool/build/install/evmtool/bin/evm \
+            --genesis besu-base/ethereum/evmtool/src/test/benchmarks/evmtool-genesis.json \
+            --output /tmp/base_results.json \
+            --besu-sha ${{ github.event.pull_request.base.sha }} \
+            --besu-ref "${{ github.event.pull_request.base.ref }}" \
+            --timestamp "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+      - name: Compare results and generate comment
+        id: compare
+        run: |
+          python3 benchmarks/scripts/compare_results.py \
+            --base /tmp/base_results.json \
+            --pr /tmp/pr_results.json \
+            --output /tmp/comparison.md \
+            --regression-threshold 5.0
+
+      - name: Post PR comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: benchmark-results
+          path: /tmp/comparison.md
