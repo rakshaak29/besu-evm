@@ -1,0 +1,189 @@
+name: Run EVM Benchmarks
+
+on:
+  workflow_dispatch:
+    inputs:
+      besu_ref:
+        description: 'Besu branch, tag, or commit SHA to benchmark'
+        required: true
+        default: 'main'
+      run_jmh:
+        description: 'Run JMH microbenchmarks'
+        type: boolean
+        default: true
+      run_evmtool:
+        description: 'Run evmtool benchmarks'
+        type: boolean
+        default: true
+      benchmark_filter:
+        description: 'JMH benchmark filter (regex, default: all)'
+        required: false
+        default: '.*'
+  schedule:
+    # Run every Monday at 00:00 UTC on main branch
+    - cron: '0 0 * * 1'
+
+env:
+  JAVA_VERSION: '21'
+  RESULTS_DIR: results/history
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      run_id: ${{ steps.meta.outputs.run_id }}
+      besu_sha: ${{ steps.checkout_besu.outputs.sha }}
+      timestamp: ${{ steps.meta.outputs.timestamp }}
+    steps:
+      - name: Checkout benchmarks repo
+        uses: actions/checkout@v4
+
+      - name: Set metadata
+        id: meta
+        run: |
+          echo "run_id=$(date +%Y%m%d_%H%M%S)" >> "$GITHUB_OUTPUT"
+          echo "timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout Besu
+        id: checkout_besu
+        uses: actions/checkout@v4
+        with:
+          repository: hyperledger/besu
+          ref: ${{ inputs.besu_ref || 'main' }}
+          path: besu-src
+          fetch-depth: 1
+
+      - name: Get Besu SHA
+        run: |
+          SHA=$(git -C besu-src rev-parse --short HEAD)
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+
+  jmh-benchmarks:
+    runs-on: ubuntu-latest
+    needs: setup
+    if: ${{ inputs.run_jmh != 'false' }}
+    steps:
+      - name: Checkout benchmarks repo
+        uses: actions/checkout@v4
+
+      - name: Checkout Besu
+        uses: actions/checkout@v4
+        with:
+          repository: hyperledger/besu
+          ref: ${{ inputs.besu_ref || 'main' }}
+          path: besu-src
+
+      - name: Set up Java ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: gradle
+
+      - name: Build JMH benchmarks jar
+        working-directory: besu-src
+        run: ./gradlew :ethereum:core:jmhJar -x test --no-daemon
+
+      - name: Run JMH benchmarks
+        working-directory: besu-src
+        run: |
+          java -jar ethereum/core/build/libs/*-jmh.jar \
+            -f 1 \
+            -wi 3 \
+            -i 5 \
+            -rf json \
+            -rff "${{ github.workspace }}/jmh-raw.json" \
+            "${{ inputs.benchmark_filter || '.*' }}"
+
+      - name: Parse and store JMH results
+        run: |
+          python3 scripts/parse_jmh.py \
+            --input jmh-raw.json \
+            --output results/history/${{ needs.setup.outputs.run_id }}_jmh.json \
+            --besu-sha ${{ needs.setup.outputs.besu_sha }} \
+            --besu-ref "${{ inputs.besu_ref || 'main' }}" \
+            --timestamp "${{ needs.setup.outputs.timestamp }}"
+
+      - name: Upload JMH results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jmh-results-${{ needs.setup.outputs.run_id }}
+          path: results/history/${{ needs.setup.outputs.run_id }}_jmh.json
+
+  evmtool-benchmarks:
+    runs-on: ubuntu-latest
+    needs: setup
+    if: ${{ inputs.run_evmtool != 'false' }}
+    steps:
+      - name: Checkout benchmarks repo
+        uses: actions/checkout@v4
+
+      - name: Checkout Besu
+        uses: actions/checkout@v4
+        with:
+          repository: hyperledger/besu
+          ref: ${{ inputs.besu_ref || 'main' }}
+          path: besu-src
+
+      - name: Set up Java ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: gradle
+
+      - name: Build evmtool
+        working-directory: besu-src
+        run: ./gradlew :ethereum:evmtool:installDist -x test --no-daemon
+
+      - name: Run evmtool benchmarks
+        run: |
+          python3 scripts/run_evmtool_benchmarks.py \
+            --evmtool besu-src/ethereum/evmtool/build/install/evmtool/bin/evm \
+            --genesis besu-src/ethereum/evmtool/src/test/benchmarks/evmtool-genesis.json \
+            --output results/history/${{ needs.setup.outputs.run_id }}_evmtool.json \
+            --besu-sha ${{ needs.setup.outputs.besu_sha }} \
+            --besu-ref "${{ inputs.besu_ref || 'main' }}" \
+            --timestamp "${{ needs.setup.outputs.timestamp }}"
+
+      - name: Upload evmtool results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: evmtool-results-${{ needs.setup.outputs.run_id }}
+          path: results/history/${{ needs.setup.outputs.run_id }}_evmtool.json
+
+  store-and-publish:
+    runs-on: ubuntu-latest
+    needs: [setup, jmh-benchmarks, evmtool-benchmarks]
+    if: always()
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - name: Checkout benchmarks repo
+        uses: actions/checkout@v4
+
+      - name: Download all results
+        uses: actions/download-artifact@v4
+        with:
+          path: results/history/
+          merge-multiple: true
+
+      - name: Regenerate dashboard data
+        run: python3 scripts/build_dashboard_data.py --results-dir results/history
+
+      - name: Commit results to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/history/ dashboard/data/
+          git diff --staged --quiet || git commit -m "ci: add benchmark results for run ${{ needs.setup.outputs.run_id }} [skip ci]"
+          git push
+
+      - name: Deploy dashboard to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dashboard
+          destination_dir: .
