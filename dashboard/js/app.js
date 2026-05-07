@@ -8,15 +8,15 @@ let charts = {
 };
 
 const COLORS = {
-  accent: '#4f8ef7',
-  green: '#3fb950',
-  red: '#f85149',
-  yellow: '#d29922',
-  purple: '#a371f7',
-  cyan: '#39d3f2',
-  orange: '#f0883e',
-  muted: '#7d8590',
-  border: '#30363d'
+  accent: '#4c6fff',
+  green: '#1f9d61',
+  red: '#d6455d',
+  yellow: '#b48118',
+  purple: '#7a63d5',
+  cyan: '#299ab8',
+  orange: '#d9772f',
+  muted: '#637392',
+  border: '#d8e1f0'
 };
 
 const CAT_COLORS = {
@@ -472,5 +472,5 @@ function renderRunsTab() {
 }
 
 function varBgCard() {
-  return getComputedStyle(document.documentElement).getPropertyValue('--bg-card').trim() || '#161b22';
+  return getComputedStyle(document.documentElement).getPropertyValue('--bg-card').trim() || '#ffffff';
 }
