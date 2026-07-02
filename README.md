@@ -1,4 +1,4 @@
-# ⚡ Hyperledger Besu EVM Performance Benchmarking
+#  Hyperledger Besu EVM Performance Benchmarking
 
 Welcome to the **Besu EVM Benchmarking** repository! This project serves as a continuous performance tracking and regression-detection harness for the Hyperledger Besu Ethereum Virtual Machine (EVM).
 
@@ -6,23 +6,23 @@ Whether you are looking to benchmark a new EVM feature, check the throughput of 
 
 ---
 
-## 📖 Table of Contents
-- [✨ Key Features](#-key-features)
-- [📂 Repository Structure](#-repository-structure)
-- [🚀 Quick Start (Local Run)](#-quick-start-local-run)
-- [⚙️ How It Works Under the Hood](#-how-it-works-under-the-hood)
+##  Table of Contents
+- [ Key Features](#-key-features)
+- [ Repository Structure](#-repository-structure)
+- [ Quick Start (Local Run)](#-quick-start-local-run)
+- [ How It Works Under the Hood](#-how-it-works-under-the-hood)
   - [1. Low-level `evmtool` Benchmarks](#1-low-level-evmtool-benchmarks)
   - [2. JMH Microbenchmarks](#2-jmh-microbenchmarks)
   - [3. Dashboard Aggregator](#3-dashboard-aggregator)
   - [4. Result Comparator](#4-result-comparator)
-- [🔄 CI/CD & Automated Pipelines](#-cicd--automated-pipelines)
-  - [📈 Weekly Performance Runs](#-weekly-performance-runs)
-  - [🔍 Pull Request Regression Checks](#-pull-request-regression-checks)
-- [🛠️ Extending the Benchmarks](#️-extending-the-benchmarks)
+- [ CI/CD & Automated Pipelines](#-cicd--automated-pipelines)
+  - [ Weekly Performance Runs](#-weekly-performance-runs)
+  - [ Pull Request Regression Checks](#-pull-request-regression-checks)
+- [ Extending the Benchmarks](#️-extending-the-benchmarks)
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 * **Dual-Engine Benchmarking**: 
   * Run low-level instructions directly on the `evmtool` binary to measure throughput in Millions of Gas per second (**MGas/s** or **MGps**).
@@ -32,7 +32,7 @@ Whether you are looking to benchmark a new EVM feature, check the throughput of 
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 Below is a map of the repository to help you navigate:
 
@@ -66,7 +66,7 @@ besu-evm/
 
 ---
 
-## 🚀 Quick Start (Local Run)
+##  Quick Start (Local Run)
 
 Want to see the dashboard locally or run a quick benchmark test? Follow these steps:
 
@@ -94,7 +94,7 @@ Now, open your browser and navigate to `http://localhost:8000` to view the inter
 
 ---
 
-## ⚙️ How It Works Under the Hood
+##  How It Works Under the Hood
 
 ### 1. Low-level `evmtool` Benchmarks
 * **File**: [`scripts/run_evmtool_benchmarks.py`](file:///Users/rakshaak/.gemini/antigravity-ide/scratch/besu-evm/scripts/run_evmtool_benchmarks.py)
@@ -118,7 +118,7 @@ Now, open your browser and navigate to `http://localhost:8000` to view the inter
 
 ---
 
-## 🔄 CI/CD & Automated Pipelines
+##  CI/CD & Automated Pipelines
 
 This repository is designed to be fully automated.
 
@@ -133,7 +133,7 @@ This repository is designed to be fully automated.
   5. Re-runs the aggregator `build_dashboard_data.py`.
   6. Commits the results to git and deploys the new dashboard code to GitHub Pages.
 
-### 🔍 Pull Request Regression Checks
+###  Pull Request Regression Checks
 * **Workflow**: `.github/workflows/pr-benchmark-check.yml`
 * **Trigger**: Triggered on any Besu-related PR when a repository maintainer adds the `run-benchmarks` label.
 * **Actions**:
@@ -145,7 +145,7 @@ This repository is designed to be fully automated.
 
 ---
 
-## 🛠️ Extending the Benchmarks
+##  Extending the Benchmarks
 
 To add a new EVM bytecode opcode test:
 1. Open [`scripts/run_evmtool_benchmarks.py`](file:///Users/rakshaak/.gemini/antigravity-ide/scratch/besu-evm/scripts/run_evmtool_benchmarks.py).
